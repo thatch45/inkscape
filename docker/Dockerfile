@@ -1,3 +1,3 @@
-FROM opensuse:42.2
-RUN zypper --non-interactive in inkscape
+FROM base:archlinux
+RUN pacman -Syu --no-confirm inkscape
 CMD /usr/bin/inkscape
