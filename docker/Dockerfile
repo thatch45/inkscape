@@ -1,3 +1,3 @@
 FROM opensuse:tumbleweed
-RUN zypper in --non-interactive inkscape
+RUN zypper --non-interactive in inkscape
 CMD /usr/bin/inkscape
